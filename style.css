@@ -7,30 +7,28 @@ body {
 header {
     background-color: #333;
     color: #fff;
-    padding: 10px;
+    padding: 5px;
     text-align: center;
 }
 
 nav ul {
     list-style: none;
-}  .hod-info {
+}  
+.hod-info {
         display: flex;
         align-items: center;
         margin-top: 20px;
     }
-    .hod-info img {
+.hod-info img {
         width: 150px;
         height: auto;
         border-radius: 50%;
         margin-right: 20px;
     }
 
-img{
-    height:400px;
-    width:100%;
-}
 
 nav ul li {
+    color: darkgrey;
     display: inline;
     margin-right: 20px;
 }
@@ -39,66 +37,38 @@ nav ul li a {
     color: #fff;
     text-decoration: none;
 }
-
-.main-content {
-    padding: 50px 20px;
+img{
+    height:400px;
+    width:100%;
 }
-
-.photo {
-    position: relative;
+.card-container {
+    overflow-x: auto;
+    white-space: nowrap;
 }
-
-.photo img {
-    max-width: 100%;
-    height: auto;
-}
-
-.overlay {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center;
-    color: #fff;
-}
-
-.title {
-    width: 70%;
-    margin: 0 auto;
-}
-
-.title h2 {
-    font-size: 36px;
-    margin-bottom: 20px;
-}
-
-.title p {
-    font-size: 18px;
-    margin-bottom: 20px;
-}
-
-.btn {
+.card {
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-right: 20px;
     display: inline-block;
-    background-color: #f39c12;
+    width: 30%; /* Each card takes 30% of the width */
+    vertical-align: top;
+    min-width: 200px; /* Optional: Set a minimum width for each card */
+}
+.card a.button {
+    display: inline-block;
+    background-color: #007bff;
     color: #fff;
     padding: 10px 20px;
     text-decoration: none;
     border-radius: 5px;
-}
-
-.features {
-    display: flex;
-    justify-content: space-around;
-    padding: 50px 0;
-}
-
-.feature {
-    text-align: center;
+    margin-top: 10px;
 }
 
 footer {
     background-color: #333;
     color: #fff;
     text-align: center;
-    padding: 10px 0;
+    padding: 3px 0;
 }
